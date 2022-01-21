@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+  }
+
+body {
+    font-size: 20px;
+    font-family: century gothic;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+   width: 370px;
+   height: 560px;
+   background: rgba(183,199,231,1);
+   border-radius: 5px;
+   border: 3px solid rgba(60, 76, 99);
+   padding: 20px;
+   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.calculator-display {
+   width: 325px;
+   height: 120px;
+   background: rgba(226,236,255,1);
+   border-radius: 5px;
+   border: 3px solid rgba(60, 76, 99);
+   cursor: default !important;
+   background-color: rgba(255,255,255, 0.6);
+   padding: 15px;
+   color: rgba(153, 112, 63, 1);
+   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.calculator-display:focus-visible {
+    outline: unset;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(5, 70px);
+    grid-template-columns: repeat(4, 70px);
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+    text-align: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.btn-number{
+    background-color: rgba(206, 221, 240);
+    border-radius: 5px;
+    border: 3px solid rgba(60, 76, 99);
+    box-sizing: border-box;
+    height: 60%;
+    color: rgba(92, 107, 128);
+    line-height: 35px;
+    display: flex;
+    padding-top: 0px ;
+    justify-content: center;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-number:hover{
+    background-color: rgba(206, 237, 240);
+}
+
+.btn-action{
+    background-color:rgba(98, 125, 161);
+    border-radius: 5px;
+    border: 3px solid rgba(60, 76, 99);
+    box-sizing: border-box;
+    height: 60%;
+    color:rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+
+.btn-action:hover{
+    background-color: rgba(252, 204, 112, 1);
+}
+
+.btn-matematical-operation{
+    background-color: rgba(98, 125, 161);
+    border: 3px solid rgba(60, 76, 99);
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 60%;
+    color:rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-matematical-operation:hover{
+    background-color:  rgba(153, 112, 63, 1);
+}
